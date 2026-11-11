@@ -1,0 +1,408 @@
+{
+  "calibration_n": 116,
+  "calibration_quantile": 0.8,
+  "evaluated_n": 109,
+  "evaluated_farm_windows": 27,
+  "evaluated_farms": 8,
+  "gap_threshold_pp": 5.404442266470099,
+  "baseline_forecast_mae": 0.7178656723058757,
+  "baseline_forecast_r2": 0.9751628532421771,
+  "retrospective_comparisons": {
+    "2": {
+      "threshold_pp": 5.572961836088536,
+      "train_n": 23,
+      "n": 55,
+      "farm_windows": 11,
+      "alert_n": 7,
+      "weighted_alert_rate": 0.1186147186147186,
+      "scores": {
+        "history_and_farm": {
+          "gap_mae_pp": 17.348868507491353,
+          "alert_average_precision": 0.12883388595513712,
+          "gap_mae_for_alerts_pp": 36.232888665192405
+        },
+        "plus_3_sensors": {
+          "gap_mae_pp": 18.34366454117242,
+          "alert_average_precision": 0.11411218432201631,
+          "gap_mae_for_alerts_pp": 37.736661165565415
+        }
+      }
+    },
+    "3": {
+      "threshold_pp": 5.009801196806192,
+      "train_n": 78,
+      "n": 38,
+      "farm_windows": 8,
+      "alert_n": 10,
+      "weighted_alert_rate": 0.2940476190476191,
+      "scores": {
+        "history_and_farm": {
+          "gap_mae_pp": 9.706600033652446,
+          "alert_average_precision": 0.28859007035860396,
+          "gap_mae_for_alerts_pp": 18.496684114912274
+        },
+        "plus_3_sensors": {
+          "gap_mae_pp": 10.004090309806571,
+          "alert_average_precision": 0.28369157865066263,
+          "gap_mae_for_alerts_pp": 18.106789674064082
+        }
+      }
+    },
+    "4": {
+      "threshold_pp": 5.404442266470099,
+      "train_n": 116,
+      "n": 97,
+      "farm_windows": 23,
+      "alert_n": 19,
+      "weighted_alert_rate": 0.20165631469979295,
+      "scores": {
+        "history_and_farm": {
+          "gap_mae_pp": 11.628238388515332,
+          "alert_average_precision": 0.2361098404279704,
+          "gap_mae_for_alerts_pp": 13.236328096942572
+        },
+        "plus_3_sensors": {
+          "gap_mae_pp": 12.9340644622813,
+          "alert_average_precision": 0.20184324406672932,
+          "gap_mae_for_alerts_pp": 18.83489265390534
+        }
+      }
+    }
+  },
+  "historical_replay": {
+    "initial_alert_n": 21,
+    "check_measurement_first_n": 13,
+    "review_environment_n": 8,
+    "complete_sensor_review_n": 7,
+    "action_cards_without_profiles": 0,
+    "expected_positive_n": 65,
+    "review_environment_expected_positive_n": 4,
+    "actual_increase_below_forecast_n": 7,
+    "actual_increase_initial_alert_n": 1,
+    "actual_increase_review_n": 0,
+    "actual_decrease_review_n": 8,
+    "review_windows": 6,
+    "reviews": [
+      {
+        "farm_id": "AIF004",
+        "row_id": 59,
+        "end_date": "2022-01-12",
+        "status": "review_environment",
+        "expected_growth_pct": -2.0104389184395166,
+        "actual_growth_pct": -21.558441558441565,
+        "shortfall_pp": 19.54800264000205,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 19.34372774822715,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 6,
+          "humidity_pct": 6,
+          "co2_ppm": 6,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 6,
+          "light_co2": 0
+        },
+        "sensor_means": {
+          "temperature_c": 23.409511784511785,
+          "humidity_pct": 44.856467452300784,
+          "co2_ppm": 763.9394219977553
+        },
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      },
+      {
+        "farm_id": "AIF005",
+        "row_id": 146,
+        "end_date": "2022-01-12",
+        "status": "review_environment",
+        "expected_growth_pct": -1.851720056457451,
+        "actual_growth_pct": -23.444976076555022,
+        "shortfall_pp": 21.59325602009757,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 15.416321180655947,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 6,
+          "humidity_pct": 6,
+          "co2_ppm": 6,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 6,
+          "light_co2": 0
+        },
+        "sensor_means": {
+          "temperature_c": 19.68709786945081,
+          "humidity_pct": 32.19311081075787,
+          "co2_ppm": 495.2010414422179
+        },
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      },
+      {
+        "farm_id": "AIF005",
+        "row_id": 149,
+        "end_date": "2022-01-12",
+        "status": "review_environment",
+        "expected_growth_pct": -1.8258357389570157,
+        "actual_growth_pct": -20.999999999999996,
+        "shortfall_pp": 19.174164261042982,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 17.14852323540196,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 6,
+          "humidity_pct": 6,
+          "co2_ppm": 6,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 6,
+          "light_co2": 0
+        },
+        "sensor_means": {
+          "temperature_c": 19.68709786945081,
+          "humidity_pct": 32.19311081075787,
+          "co2_ppm": 495.2010414422179
+        },
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      },
+      {
+        "farm_id": "AIF010",
+        "row_id": 278,
+        "end_date": "2022-01-08",
+        "status": "review_environment",
+        "expected_growth_pct": -1.322387942433767,
+        "actual_growth_pct": -9.31506849315068,
+        "shortfall_pp": 7.992680550716912,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 6.24517962513379,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 6,
+          "humidity_pct": 6,
+          "co2_ppm": 6,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 6,
+          "light_co2": 0
+        },
+        "sensor_means": {
+          "temperature_c": 20.01673886922114,
+          "humidity_pct": 67.80277081238961,
+          "co2_ppm": 983.7068682483133
+        },
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      },
+      {
+        "farm_id": "AIF013",
+        "row_id": 434,
+        "end_date": "2022-01-18",
+        "status": "review_environment",
+        "expected_growth_pct": 0.4049257442849896,
+        "actual_growth_pct": -13.924050632911388,
+        "shortfall_pp": 14.328976377196378,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 9.19971401790064,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 6,
+          "humidity_pct": 6,
+          "co2_ppm": 6,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 6,
+          "light_co2": 0
+        },
+        "sensor_means": {
+          "temperature_c": 21.66186767470146,
+          "humidity_pct": 61.673683565531476,
+          "co2_ppm": 434.5454517113863
+        },
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      },
+      {
+        "farm_id": "AIF013",
+        "row_id": 438,
+        "end_date": "2022-01-18",
+        "status": "review_environment",
+        "expected_growth_pct": 1.315702616564507,
+        "actual_growth_pct": -18.87550200803213,
+        "shortfall_pp": 20.191204624596637,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 15.230796956187152,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 6,
+          "humidity_pct": 6,
+          "co2_ppm": 6,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 6,
+          "light_co2": 0
+        },
+        "sensor_means": {
+          "temperature_c": 21.66186767470146,
+          "humidity_pct": 61.673683565531476,
+          "co2_ppm": 434.5454517113863
+        },
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      },
+      {
+        "farm_id": "AIF014",
+        "row_id": 488,
+        "end_date": "2021-12-28",
+        "status": "review_environment",
+        "expected_growth_pct": 10.903791533140472,
+        "actual_growth_pct": -17.07317073170731,
+        "shortfall_pp": 27.976962264847785,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 9.576357904821876,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 4,
+          "humidity_pct": 4,
+          "co2_ppm": 4,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 4,
+          "light_co2": 0
+        },
+        "sensor_means": {},
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      },
+      {
+        "farm_id": "AIF014",
+        "row_id": 506,
+        "end_date": "2022-01-18",
+        "status": "review_environment",
+        "expected_growth_pct": 0.6358039267019944,
+        "actual_growth_pct": -12.06896551724138,
+        "shortfall_pp": 12.704769443943375,
+        "threshold_pp": 5.404442266470099,
+        "min_gap_without_one_pp": 12.509154850184844,
+        "recommendations": [],
+        "sensor_days": {
+          "temperature_c": 6,
+          "humidity_pct": 6,
+          "co2_ppm": 6,
+          "light_temperature": 0,
+          "dark_temperature": 0,
+          "humidity": 6,
+          "light_co2": 0
+        },
+        "sensor_means": {
+          "temperature_c": 20.6866628638971,
+          "humidity_pct": 61.21718038521819,
+          "co2_ppm": 407.4334405649639
+        },
+        "checks": {
+          "light_temperature": "needs_target",
+          "dark_temperature": "needs_target",
+          "humidity": "needs_target",
+          "light_co2": "needs_target"
+        },
+        "co2_check": "needs_target",
+        "needed": [
+          "명기 온도 관리 기준",
+          "암기 온도 관리 기준",
+          "상대습도 관리 기준",
+          "명기 CO₂ 관리 기준"
+        ]
+      }
+    ],
+    "synthetic_dispatch_verified": true,
+    "service_verification": {
+      "csv_matches_manual": true,
+      "increasing_and_decreasing_directions_verified": true,
+      "mixed_and_isolated_excursions_verified": true,
+      "insufficient_readings_verified": true,
+      "profile_missing_and_co2_limit_verified": true,
+      "measurement_dates_verified": true,
+      "missing_or_normal_followup_verified": true
+    }
+  },
+  "holdout_already_used_in_prior_work": true,
+  "intervention_outcomes_available": false
+}
